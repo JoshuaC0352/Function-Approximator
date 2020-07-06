@@ -48,7 +48,6 @@ for x in range(1000):
     # inArray2 will contain the labels for the datsets, this will have no impact on the data analysis results
     inarray2 = [0, 1, 2, 3, 4, 5, 6]
 
-    # newOutput = arrayaverager(inarray1, inarray2)
     # The answer, as a single float, will be the output data set.
     # This value will be used to back-propagate the neural network
     answerOutput = arrayAverage(inarray1)
