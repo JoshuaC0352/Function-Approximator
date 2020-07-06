@@ -73,33 +73,3 @@ print("RESULTS: ")
 for x in range(len(results)):
     print("PREDICTION", x, ":", results[x])
     print("ANSWER", x, ":", y_test[x])
-
-
-# print(clf.score(X_test, y_test))
-
-
-
-# trains the algorithm
-# for x in range(10000):
-#    if x % 500 == 0:
-#        print(x)
-    # print(inputArrays[x])
-    # print(answerArrays[x])
-#    clf.fit(inputArrays[x], answerArrays[x])
-
-
-# for x in range(20):
-#    inarray1 = [random(), random()]
-#    inarray2 = [0., 1.]
-
-#    array2d = (inarray1, inarray2)
-
-    # answer = arrayaverager(inarray1, inarray2)
-#    answer = arrayModifier(inarray1)
-
-#    output = clf.predict(array2d)
-
-#    print("Answer: ")
-#    print(answer)
-#    print("Prediction: ")
-#    print(output)
