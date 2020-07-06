@@ -47,7 +47,7 @@ for x in range(1000):
     inputArrays.append(inarray1)
     answerArrays.append(answerOutput)
 
-# The .0001 represents the fraction of the dataset that will be used as test sample.  The function will automatically
+# The 0.01 represents the fraction of the dataset that will be used as test sample.  The function will automatically
 # sort the data into test and train samples
 X_train, X_test, y_train, y_test = train_test_split(inputArrays, answerArrays, random_state=1, test_size=0.01)
 
