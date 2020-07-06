@@ -5,23 +5,14 @@ from random import seed
 from random import random
 
 
-def arrayaverager(array1=[], array2=[]):
-    returnarray = []
-
-    for x in range(len(array1)):
-        appendValue = (array1[x] + array2[x]) / 2
-        returnarray.append(appendValue)
-    return returnarray
-
-
 # gets the average of all values inside the array.  Used for testing the function's approximations
-def arrayAverage(inArray=[]):
+def array_average(in_array=[]):
 
     sum = 0
-    for x in range(len(inArray)):
-        sum += inArray[x]
+    for x in range(len(in_array)):
+        sum += in_array[x]
 
-    return sum / len(inArray)
+    return sum / len(in_array)
 
 
 seed(6)
@@ -50,7 +41,7 @@ for x in range(1000):
 
     # The answer, as a single float, will be the output data set.
     # This value will be used to back-propagate the neural network
-    answerOutput = arrayAverage(inarray1)
+    answerOutput = array_average(inarray1)
 
     array2d = (inarray1, inarray2)
     inputArrays.append(inarray1)
