@@ -34,13 +34,14 @@ X, y = make_regression(n_samples=3, random_state=1)
 inputArrays = []
 answerArrays = []
 
+# will build a new neural network based on the provided parameters.
 clf = MLPRegressor(solver='lbfgs', alpha=1e-3, hidden_layer_sizes=(25, 10, 5, 3), random_state=4, activation='identity',
                    learning_rate='adaptive')
 clf.n_outputs_ = 1
 
 # this for loop will build a sample data set for us, in a real life scenarion,
 # we would likely read the data set in from a file
-for x in range(100000):
+for x in range(1000):
     # This will be the input data set
     inarray1 = [random() * 500, random() * 500, random() * 500, random() * 500, random() * 500, random() * 500,
                 random() * 500]
@@ -58,7 +59,7 @@ for x in range(100000):
 
 # The .0001 represents the fraction of the dataset that will be used as test sample.  The function will automatically
 # sort the data into test and train samples
-X_train, X_test, y_train, y_test = train_test_split(inputArrays, answerArrays, random_state=1, test_size=0.0001)
+X_train, X_test, y_train, y_test = train_test_split(inputArrays, answerArrays, random_state=1, test_size=0.01)
 
 # print(X_train)
 
@@ -71,8 +72,8 @@ results = clf.predict(X_test)
 # This output function will display a comparison between the function's approximation, and the user's known answers
 print("RESULTS: ")
 for x in range(len(results)):
-    print("PREDICTION: ", results[x])
-    print("ANSWER: ", y_test[x])
+    print("PREDICTION", x, ":", results[x])
+    print("ANSWER", x, ":", y_test[x])
 
 
 # print(clf.score(X_test, y_test))
