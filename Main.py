@@ -39,7 +39,7 @@ clf = MLPRegressor(solver='lbfgs', alpha=1e-3, hidden_layer_sizes=(25, 10, 5, 3)
                    learning_rate='adaptive')
 clf.n_outputs_ = 1
 
-# this for loop will build a sample data set for us, in a real life scenario,
+# this for loop will build a sample data set for us, in a real life scenario
 # we would likely read the data set in from a file
 for x in range(1000):
     # This will be the input data set
