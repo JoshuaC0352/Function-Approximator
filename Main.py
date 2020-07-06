@@ -36,7 +36,7 @@ answerArrays = []
 
 clf = MLPRegressor(solver='lbfgs', alpha=1e-3, hidden_layer_sizes=(25, 10, 5, 3), random_state=4, activation='identity',
                    learning_rate='adaptive')
-clf.n_outputs_ = 2
+clf.n_outputs_ = 1
 
 # this for loop will build a sample data set for us, in a real life scenarion,
 # we would likely read the data set in from a file
