@@ -17,8 +17,6 @@ def array_average(in_array=[]):
 
 seed(6)
 
-X, y = make_regression(n_samples=3, random_state=1)
-
 # print(X)
 # print(y)
 
